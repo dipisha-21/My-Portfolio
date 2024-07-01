@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Dipisha Shivangi Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -15,13 +15,14 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Dipisha Shivangi</div>
+      <div class="logo">Dipisha | Portfolio</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -31,46 +32,65 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img class="circle-crop" src="./assets/WhatsApp Image 2024-06-14 at 7.24.38 PM.jpeg" alt="Dipisha Shivangi profile picture" />
-      </div>
-      <div class="section__text" class="typing-container">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Dipisha Shivangi</h1>
-        <p class="section__text__p2" class="typing-text">Data Scientist</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
+
+    <!-- PROFILE SECTION-->    
+    <section id="profile">   
+      <div class="portfolio-section">
+        <div class="portfolio-image">
+          <div class="section__pic-container">
+            <img class="home-picture" src="./assets/WhatsApp Image 2024-06-14 at 7.24.38 PM.jpeg" alt="Dipisha Shivangi profile picture" />
+          </div>
+        </div>
+        <div class="portfolio-text">
+          <div class="section__text">
+            <h3 class="section__text__p1">Hello, I'm</h3>
+            <h1 class="title">Dipisha Shivangi</h1>
+            <!-- <div class="container">
+              <div class="typed-out">An Enthusiastic Data Scientist.</div>
+            </div> -->
+          </div>
+          <div class="btn-container">
+            <!-- <button
+                class="btn btn-color-2"
             onclick="window.open('./assets/ResumeDipisha__Data_Analyst_ (3).pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+            >
+              Download CV
+            </button> -->
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/dipisha-shivangi-1829a1172/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/dipisha-21'"
+            />
+          </div>
         </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/dipisha-shivangi-1829a1172/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/dipisha-21'"
-          />
-        </div>
-      </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
     </section>
+
+    <!-- ABOUT SECTION-->    
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -85,15 +105,15 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
-              <img
+            <!--<div class="details-container">
+               <img
                 src="./assets/experience.png"
                 alt="Experience icon"
                 class="icon"
-              />
+              /> 
               <h3>Experience</h3>
               <p>Data Scientist Intern <br />Celebal Technologies</p>
-            </div>
+            </div>-->
             <div class="details-container">
               <img
                 src="./assets/education.png"
@@ -104,9 +124,54 @@
               <p>Final Year Student<br />B.Tech in CSE</p>
             </div>
           </div>
-          <div class="text-container">
+
+          <div class="about-containers">
+            
+            <div class="details-container">
+              <h3>Data Scientist</h3>
+              <!-- <p>Final Year Student<br />B.Tech in CSE</p> -->
+              <div class="btn-container">
+                <button
+                    class="btn btn-color-2"
+                onclick="window.open('./assets/dipisha_data_science.pdf')"
+                >
+                  Download CV
+                </button>
+              </div>  
+            </div>
+          
+            <div class="details-container">
+              <h3>Software Developer</h3>
+              <!-- <p>Final Year Student<br />B.Tech in CSE</p> -->
+              <div class="btn-container">
+                <button
+                    class="btn btn-color-2"
+                onclick="window.open('./assets/dipisha_software_developer.pdf')"
+                >
+                  Download CV
+                </button>
+              </div>
+            </div>
+            
+            <div class="details-container">
+              <h3>Frontend Developer</h3>
+              <!-- <p>Final Year Student<br />B.Tech in CSE</p> -->
+              <div class="btn-container">
+                <button
+                    class="btn btn-color-2"
+                onclick="window.open('./assets/dipisha_frontend_developer.pdf')"
+                >
+                  Download CV
+                </button>
+              </div>
+            </div>
+          </div>
+          
             <p>
-              I am a highly dedicated and meticulous Data Scientist Intern with a solid background in machine learning, statistical analysis, and data visualization. I am excited to support systems that use data to make decisions. I am skilled at turning complicated datasets into useful insights since I have practical expertise with Python, R, SQL, and well-known data science tools like Pandas, NumPy, and Scikit-Learn.
+              Hi there! As a final-year B.Tech student specializing in computer science and engineering, my name is Dipisha. I'm a committed, industrious person who loves innovation and technology. As my academic career comes to an end, I am excited to find new possibilities to use my knowledge and talents in a professional situation. <br>
+
+              I have refined my skills in a number of computer science domains over the last few years, including web development, data analysis, machine learning, and software development. My initiatives demonstrate my dedication to lifelong learning and my desire to take on challenging problems and come up with innovative solutions.
+
             </p>
           </div>
         </div>
@@ -118,9 +183,61 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
+    <!-- EXPERIENCE SECTION-->    
     <section id="experience">
+      <p class="section__text__p1">My</p>
+      <h1 class="title">Experiences</h1>
+      <div class="timeline-event">
+        <div class="timeline-date">Jun 2024 - Present</div>
+        <div class="timeline-content">
+            <h3>Data Scientist Intern</h3>
+            <h4>Celebal Technologies</h4>
+            <p>I got the chance to work on cutting-edge data science projects, interact with professionals in the field, and help create solutions that made an effect while I was a data scientist intern at Celebal Technologies. I gained practical experience in data analysis, machine learning, and data visualization during my internship.
+            </p>
+        </div>
+      </div>
+      <div class="timeline-event">
+        <div class="timeline-date">Jun 2023 - Jul 2023</div>
+        <div class="timeline-content">
+            <h3>Web Developer Intern</h3>
+            <h4>InternPe</h4>
+            <p>Working with a brilliant team, developing cutting-edge online apps, and honing my web technologies were all part of my experience as a Web Developer Intern at Internpe. I gained invaluable practical knowledge in front-end and back-end development from this internship.
+            </p>
+        </div>
+      </div>
+      <div class="timeline-event">
+        <div class="timeline-date">Jun 2023 - Jul 2023</div>
+        <div class="timeline-content">
+            <h3>Web Development and Designing Intern</h3>
+            <h4>Oasis Infobyte</h4>
+            <p>I was in charge of creating and designing online solutions during my internship in web development and design at Oasis Infobyte. I gained practical experience in this capacity in developing dynamic online apps, designing user interfaces, and working with a creative team to meet customer objectives.
+            </p>
+        </div>
+      </div>
+      <div class="timeline-event">
+        <div class="timeline-date">May 2023 - Jun 2023</div>
+        <div class="timeline-content">
+            <h3>Web Developer Intern</h3>
+            <h4>CodeClause</h4>
+            <p>I got the chance to work on a variety of web development projects as a web development intern at CodeClause, where I gained hands-on experience creating dynamic and scalable online apps. In addition to exposing me to front-end and back-end technologies, the internship gave me the chance to work on actual projects with seasoned engineers as mentors.
+            </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+
+    </section>
+
+    <!-- SKILLS SECTION-->    
+    <div class="timeline">
+    <section id="skills">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -194,112 +311,318 @@
               </article>
             </div>
           </div>
-          
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Developer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C/C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Structures</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Developer</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React.js</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Node.js</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C/C++</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+        </div>  
       <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certificates'"
+      />
+    </section>
+
+    <!-- CERTIFICATES SECTION-->    
+    <section id="certificates">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Certificates</h1>
+      <div class="certificates-section">
+        <div class="certificate">
+            <div class="certificate-details">
+                <h3>CCNA: Enterprise Networking, Security, and Automation</a></h3>
+                <p>Cisco Networking Academy</p>
+                <p>Issued Jun 2024</p>
+                <a class="show-cred" href="https://www.credly.com/badges/6d73193b-53ee-4f48-be46-ecf4388c4a4c/public_url">Show credential</a>
+            </div>
+        </div>
+        <div class="certificate">
+            <div class="certificate-details">
+                <h3>Cybersecurity Essentials by Cisco</a></h3>
+                <p>Cisco Networking Academy</p>
+                <p>Issued May 2024</p>
+                <a class="show-cred" href="https://www.credly.com/badges/bf80e068-f8ad-4621-8519-923fdcc15b6a/public_url">Show credentials</a>
+            </div>
+        </div>
+        <div class="certificate">
+          <div class="certificate-details">
+              <h3>Google Data Analytics</a></h3>
+              <p>Google on Coursera</p>
+              <p>Issued Jun 2024</p>
+              <a class="show-cred" href="https://www.coursera.org/account/accomplishments/professional-cert/SAYCJHBYMSZ9">Show credentials</a>
+          </div>
+      </div>
+      <div class="certificate">
+          <div class="certificate-details">
+              <h3>IBM Data Science</a></h3>
+              <p>IBM on Coursera</p>
+              <p>Issued Jun 2024</p>
+              <a class="show-cred" href="https://www.coursera.org/account/accomplishments/professional-cert/SAYCJHBYMSZ9">Show credential</a>
+          </div>
+      </div>
+      
+      <a class="show-all" href="https://github.com/dipisha-21/My-Certificates">Show all certifications</a>
+    </div>
+    <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Designer.png"
-                alt="Customer Lifetime Value Prediction"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Customer Lifetime Value Prediction</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/dipisha-21/Customer-Lifetime-Value-Prediction/blob/main/CT_CSI_DS_5045_CLV.ipynb'"
-              >
-                Github
-              </button>
-  
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Designer (1).png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Weather Data Analysis</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/dipisha-21/IBM-Data-Science-Coursera-Course/blob/main/ML0101EN_SkillUp_FinalAssignment.ipynb'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Designer (2).png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Data Preprocessing and feature engineering</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/dipisha-21/Celebal-Technologies/blob/main/Week%204/Data%20Preprocessing%20and%20feature%20engineering.ipynb'"
-              >
-                Github
-              </button>
-              
-            </div>
+
+    <!-- PROJECTS SECTION -->
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/Designer.png" alt="Customer Lifetime Value Prediction" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Customer Lifetime Value Prediction</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dipisha-21/Customer-Lifetime-Value-Prediction/blob/main/CT_CSI_DS_5045_CLV.ipynb'">Github</button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/Designer (3).png" alt="Password Generator" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Password Generator</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dipisha-21/Password_Generator'">Github</button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/Designer (1).png" alt="Weather Data Analysis" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Weather Data Analysis</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dipisha-21/IBM-Data-Science-Coursera-Course/blob/main/ML0101EN_SkillUp_FinalAssignment.ipynb'">Github</button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/Designer (4).png" alt="Online Code Editor" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Online Code Editor</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dipisha-21/Online-Code-Editor'">Github</button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/Designer (2).png" alt="Data Preprocessing and feature engineering" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Data Preprocessing and Feature Engineering</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dipisha-21/Celebal-Technologies/blob/main/Week%204/Data%20Preprocessing%20and%20feature%20engineering.ipynb'">Github</button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/Designer (5).png" alt="Weather.js" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Weather.js</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dipisha-21/Weather.js'">Github</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#research'" />
+</section>
+
+<!-- RESEARCH SECTION -->
+<section id="research">
+  <p class="section__text__p1">My Recent</p>
+  <h1 class="title">Research</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <h3>Vehicular Fog Computing Optimization through VCG Optimization in Game Theory</h3>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dipisha-21/Vehicular-Fog-Computing-Optimization-through-VCG-Optimization-in-Game-Theory/blob/main/vcg%20(1).pdf'">Github</button>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:dipishas21@gmail.com">Email</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/dipisha-shivangi-1829a1172/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+</section>
+
+
+<section id="contact">
+  <div class="contact-container">
+    <h3>I WOULD LOVE TO HEAR FROM YOU</h3>
+    <h1>Contact Me</h1>
+    <form id="contact-form" action="https://formspree.io/f/xgvwevgk" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="What's your name?" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="What's your email?" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="What do you want to say?" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+    <div id="confirmation-message" class="confirmation-message"></div>
+  </div>   
+</section>
+
+
+    <kbd></kbd>
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
