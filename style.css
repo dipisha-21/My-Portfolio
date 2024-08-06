@@ -32,6 +32,11 @@
   to { width: 100% }
 }
 */
+@media{
+  .contact-container{
+    flex-wrap: wrap;
+  }
+}
 
 
 body {
